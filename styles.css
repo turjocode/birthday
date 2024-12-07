@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffccff, #ffffff);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: fadeInBackground 3s ease-in;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+header {
+    background: #ff99cc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+}
+
+header p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.birthday-image {
+    max-width: 300px;
+    border: 5px solid #ff99cc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    background: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e0559e;
+}
+
+#surpriseText {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff66b2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.gallery {
+    margin: 40px 0;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    color: #ff66b2;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        background: #ffffff;
+    }
+    to {
+        background: linear-gradient(to bottom, #ffccff, #ffffff);
+    }
+}
